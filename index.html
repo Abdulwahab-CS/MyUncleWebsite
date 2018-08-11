@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>روعة المشغول</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- to make dropdown menu in navbar working -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- ....................................... -->
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+     
+ </head>
+    
+ <body>    
+     
+      
+     
+<!-- Start upper bar -->
+      <div class="upper-bar">
+       <div class="containter">
+         <div class="row">
+            <div class="col-sm left-part">
+             <span>أبو ياسر : </span><span>0504934660</span> &emsp; 
+             <span>ياسر : </span><span>0557458298</span> 
+            </div>
+            <div class="col-sm right-part">
+             <span id="brand_name">مؤسسة روعة المشغول</span>
+            </div>
+         </div>   
+       </div>
+      </div>
+<!-- End upper bar -->
+         
+     
+<!-- Start Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="scrl-down nav-link" href="#contact-us-keyword">تواصل معنا</a>
+      </li>
+      <li class="nav-item">
+        <a class="scrl-down nav-link" href="#our-location-keyword">موقعنا</a>
+      </li>
+      <li class="nav-item">
+        <a class="scrl-down nav-link" href="#our-products-keyword">منتجاتنا</a>
+      </li>
+      <li class="nav-item">
+        <a class="scrl-down nav-link active" href="#">الرئيسية</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->     
+    
+<br>       
+     
+<!-- Start under nav -->
+    <div class="under-nav">
+        <h3>روعة المشغول لأعمال الحدادة والألمنيوم والستانلس ستيل</h3> <br>
+        <p> فريق من المتخصصين و الخبراء في تصميم و صناعـة و تركيب مختلف أنواع الحديد من أبواب و نوافذ و غيرها بدقة و احترافية عالية مع جودة في التركيب</p> <br>
+        <p><span>المملكة العربية السعودية , الإحساء - الصناعية</span><p>
+    </div>
+<!-- End under nav --> 
+   
+<br>
+     
+<div id="our-products-keyword">
+  <h5>منتجاتنا</h5>
+</div>
+
+
+<!-- Start our-products -->
+    <div class="our-products">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+           <img src="imgs/a1.jpg">
+           <img src="imgs/a2.jpg">
+           <img src="imgs/a4.jpg">
+           <img src="imgs/a11.jpg">
+          </div>
+          <div class="col">
+           <img src="imgs/a5.jpg">
+           <img src="imgs/a13.jpg">
+           <img src="imgs/a7.jpg">
+           <img src="imgs/a12.jpg">
+          </div>
+          <div class="col">
+           <img src="imgs/a3.jpg">
+           <img src="imgs/a9.jpg">
+           <img src="imgs/a10.jpg">
+           <img src="imgs/a15.jpg">      
+          </div>
+          <div class="col">
+           <img src="imgs/a6.jpg">
+           <img src="imgs/a14.jpg">
+           <img src="imgs/a8.jpg">
+           <img src="imgs/a16.jpg">      
+          </div>
+        </div> 
+      </div>
+    </div>
+<!-- End our-products --> 
+     
+     
+<div id="our-location-keyword">
+  <h5>موقعنا</h5>
+</div>
+<br>   
+     
+     <!-- Start map -->
+     
+     <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 24.590930, lng: 46.689001}, // our home
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1JKaoyGiIaOloS6Y51nuKQjZABabiP4&callback=initMap"
+    async defer></script>
+     
+     <!-- End map -->
+     
+<br>
+     
+<div id="contact-us-keyword">
+  <h5>تواصل معنا</h5>
+</div>
+     
+<br>
+     <!-- Start about us -->
+     
+     <div class="about-us">
+         <div class="person">   
+             <span>أبو ياسر : </span><span>0504934660</span> <span>- مدير الورشة </span> &nbsp; <span><a href="#"><i class="fa fa-phone"></i></a></span> 
+         </div> 
+         
+         <br>
+         
+         <div class="person">  
+             <span>ياسر : </span><span>0557458298</span>   <span>- نائب مدير الورشة </span> &nbsp; <span><a href="#"><i class="fa fa-phone"></i></a></span> 
+         </div>
+     </div>
+     
+     <!-- End about us -->
+     
+<br> 
+     
+     
+     <!-- Start footer -->
+     
+     <div class="footer-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<p class="copyright">
+						 حقوق الطبع محفوظة , ورشة أبو ياسر , المبرمج عبدالوهاب أحمد الهندي @
+					</p>
+					<div class="footer-social-links">
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-snapchat"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+     
+    <!-- End footer -->
+     
+    
+     
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/JS.js"></script>
+ </body>
+</html>

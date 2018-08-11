@@ -1,0 +1,365 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* start upper bar */
+.upper-bar {
+    background-color: #08526d;   /*     #ec1c23 */
+    color: white;
+    padding: 10px;  
+}
+
+
+.left-part {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.left-part span{
+    font-size: 115%;
+}
+
+.right-part {
+    text-align: right;
+    padding-right: 5%
+}
+
+.upper-bar span{
+    color: while;
+}
+
+#brand_name {
+    font-size: 110%;
+}
+
+#brand_name {
+    font-size: 140%;
+    color: white;
+    font-family: 'Lemonada', cursive; 
+    text-shadow: 4px 5px 7px black;
+    margin-right: 10%;
+}
+
+/* End upper bar */
+
+
+
+/* Start Navbar */
+
+.navbar-nav {
+    margin: auto;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-item {
+    font-family: 'Lemonada', cursive; 
+}
+
+.dropdown-item:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Lemonada', cursive; 
+}
+
+.navbar-dark .navbar-nav .nav-item:hover {
+    color: white;
+    font-weight: bold;
+}
+
+li.nav-item {
+    margin-left: 10px;
+    
+}
+
+/* End Navbar */
+
+
+/* Start under-nav */
+
+.under-nav {
+    background-image: url('../imgs/bg3.jpg');
+    height: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 7px;
+}
+
+.under-nav h3 {
+    margin: auto;
+    color: white;
+    font-size: 35px;
+    font-weight: 2px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: -5px;
+    font-family: 'Lemonada', cursive;
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 2px 7px 9px black;
+}
+
+
+.under-nav p {
+    margin: auto;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 27px;
+    padding: 5px;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.under-nav p span {
+    text-shadow: 2px 7px 9px black;
+}
+
+/* End under-nav */
+
+
+
+/* Start navbar keywords */
+
+#our-products-keyword, #our-location-keyword, #contact-us-keyword {
+    text-align: center;
+    background-color: #333;
+    margin-top: 8px;
+}
+
+#our-products-keyword h5, #our-location-keyword h5, #contact-us-keyword h5 {
+    padding: 13px 0px;
+    font-family: 'Lemonada', cursive;
+    color: white;
+    
+}
+
+/* Start our-products-keyword */
+
+
+
+/* Start our-products */
+
+.our-products {
+   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px 10px;
+}
+
+.col img {
+    width: 100%;
+    margin: 15px 0px;
+    vertical-align: middle;
+    transition: transform 1s;
+}
+
+img:hover {
+    box-shadow: 6px 6px 6px gray;
+    outline: 2px solid black;
+    transform: scale(1.4);
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    .col { 
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .under-nav h3 {
+        font-size: 28px;
+    }
+    
+    .under-nav p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .under-nav h3 {
+        font-size: 24px;
+    }
+    
+    .under-nav p {
+        font-size: 20px;
+    }
+    
+    #brand-name {
+        font-size: 12px;
+    }
+    
+    .right-part span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    
+    .left-part span {
+        font-size: 16px;
+        margin-top: 10px;
+    } 
+    #brand-name {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    
+    .under-nav h3 {
+        font-size: 23px;
+    }
+    .under-nav p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    
+    .under-nav h3 {
+        font-size: 21px;
+    }
+    .under-nav p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 282px) {
+    
+    .under-nav h3 {
+        font-size: 20px;
+    }
+    .under-nav p {
+        font-size: 18px;
+    }
+}
+
+/* End our-products */
+
+
+/* Start map */
+
+#map{
+    margin: auto;
+    height: 650px;
+    width: 90%;
+}
+
+/* End map */
+
+
+
+/* Start about us */
+
+.about-us {
+    background-color: dimgray;
+    padding: 20px;
+    
+}
+
+.person {
+    background-color:darkgray;
+    height: 70px;
+    text-align: center;
+    font-size: 27px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.person span {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* End about us */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start footer */
+
+.footer-area {
+	background: #191f21;
+	padding: 60px 0;
+}
+
+.copyright {
+	color: white;
+    opacity: 0.5;
+	text-transform: uppercase;
+	font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.footer-social-links a {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	background: #4b5456;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+.footer-social-links a i {
+	color: #000;
+	transition: 0.2s;
+}
+
+.footer-social-links a:hover i {
+	color: #fff;
+}
+
+/* End footer */
+
+
+
+
+
+
+
