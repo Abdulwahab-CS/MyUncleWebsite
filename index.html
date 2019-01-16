@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- sweet alert --->
+    <link href="sweetAlert/node_modules/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="css/style.css">
     
     <!-- to make dropdown menu in navbar working -->
@@ -14,15 +18,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <!-- ....................................... -->
     
-    <!-- fonts -->
+    <!-- fonts --> <!-- 
     <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    -->
      
  </head>
     
  <body>    
      
-      
+<div id="our-startPage-keyword" style="display: none">
+  <h5>الرئيسية</h5>
+</div>      
      
 <!-- Start upper bar -->
       <div class="upper-bar">
@@ -59,7 +66,7 @@
         <a class="scrl-down nav-link" href="#our-products-keyword">منتجاتنا</a>
       </li>
       <li class="nav-item">
-        <a class="scrl-down nav-link active" href="#">الرئيسية</a>
+        <a class="scrl-down nav-link active" href="#our-startPage-keyword">الرئيسية</a>
       </li>
     </ul>
   </div>
@@ -126,17 +133,31 @@
      
      <div id="map"></div>
     <script>
-      var map;
+ 
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 24.590930, lng: 46.689001}, // our home
-          zoom: 8
+       
+        var myPlace = {lat: 25.410631, lng: 49.478904};
+
+        // Map Options
+        var options = {
+            center: myPlace, 
+            zoom: 8
+        };
+        
+        // Creating the map
+        var map = new google.maps.Map(document.getElementById('map'), options);
+      
+        var marker = new google.maps.Marker({
+          position: myPlace,
+          map: map,
+          title: 'ورشة روعة المشغول'
         });
+
+
       }
+
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1JKaoyGiIaOloS6Y51nuKQjZABabiP4&callback=initMap"
-    async defer></script>
-     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXSg8784tBcUsvByWHr8qWfexpPLhzvhA&callback=initMap" async defer></script>
      <!-- End map -->
      
 <br>
@@ -150,13 +171,13 @@
      
      <div class="about-us">
          <div class="person">   
-             <span>أبو ياسر : </span><span>0504934660</span> <span>- مدير الورشة </span> &nbsp; <span><a href="#"><i class="fa fa-phone"></i></a></span> 
+             <span>أبو ياسر : </span><span>0504934660</span> <span>- مدير الورشة </span><span><a href="#"><i class="fa fa-phone"></i></a></span> 
          </div> 
          
          <br>
          
          <div class="person">  
-             <span>ياسر : </span><span>0557458298</span>   <span>- نائب مدير الورشة </span> &nbsp; <span><a href="#"><i class="fa fa-phone"></i></a></span> 
+             <span>ياسر : </span><span>0557458298</span>   <span>- نائب مدير الورشة </span><span><a href="#"><i class="fa fa-phone"></i></a></span> 
          </div>
      </div>
      
@@ -188,7 +209,7 @@
     <!-- End footer -->
      
     
-     
+    <script src="sweetAlert/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/JS.js"></script>
  </body>
