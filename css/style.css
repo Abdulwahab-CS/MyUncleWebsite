@@ -6,6 +6,52 @@
 }
 
 
+
+/* Include Arabic Fonts */ 
+
+/* arabic */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cairo'), local('Cairo-Regular'), url(https://fonts.gstatic.com/s/cairo/v4/SLXGc1nY6HkvalIkTpu0xg.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* arabic */
+@font-face {
+  font-family: 'Lemonada';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lemonada'), local('Lemonada-Regular'), url(https://fonts.gstatic.com/s/lemonada/v5/0QIjMXFD9oygTWy_R8tMv_SW8g.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* india flower font (for testing issues) */
+@font-face {
+    font-family: IndieFont;
+    src: url(../fonts/IndieFlower.ttf);
+}
+
+/* Start My CSS */
+
+
+/* Testing phase */
+span {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  /* indieFont */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* start upper bar */
 .upper-bar {
     background-color: #08526d;   /*     #ec1c23 */
@@ -20,7 +66,7 @@
 }
 
 .left-part span{
-    font-size: 115%;
+    font-size: 100%;
 }
 
 .right-part {
@@ -107,7 +153,7 @@ li.nav-item {
     font-family: 'Lemonada', cursive;
     position: relative;
     top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-shadow: 2px 7px 9px black;
 }
 
@@ -119,7 +165,7 @@ li.nav-item {
     font-size: 27px;
     padding: 5px;
     width: 80%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .under-nav p span {
@@ -151,9 +197,6 @@ li.nav-item {
 
 /* Start our-products */
 
-.our-products {
-   
-}
 
 .row {
     display: flex;
@@ -174,21 +217,25 @@ li.nav-item {
     transition: transform 1s;
 }
 
-img:hover {
-    box-shadow: 6px 6px 6px gray;
-    outline: 2px solid black;
-    transform: scale(1.4);
-    position: relative;
-    z-index: 2;
+
+@media screen and (min-width: 1200px) {
+    img:hover {
+        box-shadow: 6px 6px 6px gray;
+        outline: 2px solid black;
+        transform: scale(1.4);
+        position: relative;
+        z-index: 2;
+        
+    }
     
 }
-
 
 @media screen and (max-width: 1200px) {
     .col { 
         flex: 50%;
         max-width: 50%;
     }
+    
 }
 
 @media screen and (max-width: 1060px) {

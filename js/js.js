@@ -4,3 +4,4 @@ $('.scrl-down').on('click', function (e) {
 			scrollTop: $($(this).attr('href')).offset().top
 		}, 1000, 'linear');
 	});
+
