@@ -10,10 +10,11 @@ portfolio website for my uncle metal workshop
 <h5># the website is responsive to any screen size.</h5>
 
 <h5># Screenshots for the website
+  - الرئيسية
   <img src="Screenshots/i1.png">
-  
+  - منتجاتنا
   <img src="Screenshots/i2.png">
-  
+  - موقعنا
   <img src="Screenshots/i3.png">
-  
+  - تواصل معنا
   <img src="Screenshots/i4.png">
