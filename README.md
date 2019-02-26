@@ -8,3 +8,12 @@ portfolio website for my uncle metal workshop
 - contact us.<br>
 
 <h5># the website is responsive to any screen size.</h5>
+
+<h5># Screenshots for the website
+  <img src="screenshots/i1.png">
+  
+  <img src="screenshots/i2.png">
+  
+  <img src="screenshots/i3.png">
+  
+  <img src="screenshots/i4.png">
